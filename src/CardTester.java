@@ -20,7 +20,21 @@ public class CardTester {
 		System.out.println();
 		
 		System.out.println("Test for Ace of Diamonds #2");
-		System.out.println("  rank: " + aceDiamonds2.)
+		System.out.println("  rank: " + aceDiamonds2.rank());
+		System.out.println("  suit: " + aceDiamonds2.suit());
+		System.out.println("  pointValue: " + aceDiamonds2.pointValue());
+		System.out.println("  toString: " + aceDiamonds2.toString());
+		System.out.println();
 		
+		System.out.println("Test for King of Diamonds");
+		System.out.println("  rank: " + kingDiamonds.rank());
+		System.out.println("  suit: " + kingDiamonds.suit());
+		System.out.println("  pointValue: " + kingDiamonds2.pointValue());
+		System.out.println("  toString: " + kingDiamonds2.toString());
+		System.out.println();
+		
+		System.out.println("Matches Test");
+		System.out.println("  Matching: " + aceDiamonds1.matches(aceDiamonds2));
+		System.out.println("  Not Matching: " + aceDiamonds1.matches(kingDiamonds));
 	}
 }
