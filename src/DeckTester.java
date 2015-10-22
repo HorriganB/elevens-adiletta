@@ -9,8 +9,15 @@ public class DeckTester {
 		 *	@param args is not used.
 		 */
 		public static void main(String[] args) {
-			/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+			String[] ranks = {"jacks","king","queen","ace"};
+			int[] values = {1,2,3,4};
+			String[] suits = {"Blue","Red"};
+			Deck y = new Deck(ranks, suits, values);
+			System.out.println("The deck is empty?" + y.isEmpty());
+			y.deal().toString();
+			y.toString();
 		}
+		
 	
 
 }
