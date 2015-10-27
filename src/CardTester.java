@@ -29,8 +29,8 @@ public class CardTester {
 		System.out.println("Test for King of Diamonds");
 		System.out.println("  rank: " + kingDiamonds.rank());
 		System.out.println("  suit: " + kingDiamonds.suit());
-		System.out.println("  pointValue: " + kingDiamonds2.pointValue());
-		System.out.println("  toString: " + kingDiamonds2.toString());
+		System.out.println("  pointValue: " + kingDiamonds.pointValue());
+		System.out.println("  toString: " + kingDiamonds.toString());
 		System.out.println();
 		
 		System.out.println("Matches Test");

@@ -83,7 +83,11 @@ public class Deck {
 		public Card deal() {
 			/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 	        // IS EMPTY if so return null
-	        size--;
+	        if (isEmpty()){
+                    assert this.size == 0 : "The deck is not actually empty!";
+                    return null;
+                }
+                size--;
 	        Card c = cards.get(size);
 	        return c;
 		}
