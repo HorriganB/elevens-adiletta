@@ -34,8 +34,8 @@ public class Deck {
 		 * @param values is an array containing all of the card point values.
 		 */
 		public Deck(String[] ranks, String[] suits, int[] values) {
-	        
-			cards = new ArrayList<Card>();
+                    assert ranks.length == values.length : "The ranks and values are different!";
+                    cards = new ArrayList<Card>();
 	        for (int j = 0; j < ranks.length; j++) {
 	            for (String suitString : suits){
 	                cards.add(new Card(ranks[j], suitString, values[j]));
